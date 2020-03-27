@@ -493,14 +493,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    8 分
                 </div>
                 
                 
@@ -536,7 +536,23 @@
 <ul>
 <li>你可以假设 k 总是有效的，且 1 ≤ k ≤ 数组的长度。</li>
 </ul>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><h3 id="小根堆-STL优先队列"><a href="#小根堆-STL优先队列" class="headerlink" title="小根堆+STL优先队列"></a>小根堆+STL优先队列</h3><h3 id="大根堆-STL优先队列"><a href="#大根堆-STL优先队列" class="headerlink" title="大根堆+STL优先队列"></a>大根堆+STL优先队列</h3><h3 id="小根堆-手写"><a href="#小根堆-手写" class="headerlink" title="小根堆+手写"></a>小根堆+手写</h3><h3 id="大根堆-手写"><a href="#大根堆-手写" class="headerlink" title="大根堆+手写"></a>大根堆+手写</h3><h3 id="快速选择"><a href="#快速选择" class="headerlink" title="快速选择"></a>快速选择</h3><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="排序（c-）"><a href="#排序（c-）" class="headerlink" title="排序（c++）"></a>排序（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h3><p>对数组从大到小排序，取第 $k$ 个元素。</p>
+<p>或者从小到大排序，取第 $n-k+1$ 个元素。</p>
+<h3 id="小根堆-库函数"><a href="#小根堆-库函数" class="headerlink" title="小根堆+库函数"></a>小根堆+库函数</h3><p><code>c++</code> 自带 <code>priority_queue&lt;int&gt;</code> ，可以实现小根堆。</p>
+<p><code>python</code> 自带 <code>heapq</code> ，可以实现小根堆，同时还自带 <code>nlargest</code> 函数可以直接求出前 $k$ 大元素。</p>
+<p>然后维护一个大小为 $k$ 的小根堆，保存最大的 $k$ 个数，堆顶就是第 $k$ 大的数。新元素入堆，如果堆中元素个数大于 $k$ ，就将堆顶元素出堆。</p>
+<h3 id="大根堆-库函数"><a href="#大根堆-库函数" class="headerlink" title="大根堆+库函数"></a>大根堆+库函数</h3><p><code>c++</code> 自带 <code>priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt;</code> ，可以实现大根堆。</p>
+<p><code>python</code> 没有大根堆实现。</p>
+<p>然后维护一个大小为 $n-k+1$ 的大根堆，保存最小的 $n-k+1$ 个数，堆顶就是第 $n-k+1$ 小的数，即第 $k$ 大的数。新元素入堆，如果堆中元素个数大于 $n-k+1$ ，就将堆顶元素出堆。</p>
+<h3 id="小根堆-手写"><a href="#小根堆-手写" class="headerlink" title="小根堆+手写"></a>小根堆+手写</h3><p>利用原地算法，直接将原数组当作一个小根堆。</p>
+<p>首先对前 $k$ 个元素建立初始堆。然后遍历后面的元素，如果大于堆顶元素的话，就和堆顶元素交换位置，并调整堆。</p>
+<p>小根堆大小始终为 $k$ 。</p>
+<h3 id="大根堆-手写"><a href="#大根堆-手写" class="headerlink" title="大根堆+手写"></a>大根堆+手写</h3><p>利用原地算法，直接将原数组当作一个大根堆。</p>
+<p>首先对前 $n-k+1$ 个元素建立初始堆。然后遍历后面的元素，如果小于堆顶元素的话，就和堆顶元素交换位置，并调整堆。</p>
+<p>大根堆大小始终为 $n-k+1$ 。</p>
+<h3 id="快速选择"><a href="#快速选择" class="headerlink" title="快速选择"></a>快速选择</h3><p>思想类似于快速排序，首先随机选取一个元素 $p$，然后将区间内元素比 $p$ 小的都放在 $p$ 左边，比 $p$ 大的都放在 $p$ 右边。</p>
+<p>然后看 $p$ 的下标 $i$，如果 $i+1 = n-k+1$，那就说明 $p$ 就是第 $n-k+1$ 小（第 $k$ 大）的元素，直接返回即可。否则如果 $i+1 &lt; n-k+1$，那就说明第 $k$ 大元素在 $p$ 的右边区间内，递归寻找即可。否则就在左边区间，递归寻找。</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><h3 id="排序（c-）"><a href="#排序（c-）" class="headerlink" title="排序（c++）"></a>排序（c++）</h3><pre class="line-numbers language-cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">{</span>
 <span class="token keyword">public</span><span class="token operator">:</span>
     <span class="token keyword">int</span> <span class="token function">findKthLargest</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token operator">&amp;</span> nums<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token function">sort</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span><span class="token function">begin</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> nums<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> greater<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1481,7 +1497,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">237.3k</span>
+            <span class="white-color">237.8k</span>
             
 
             <br>
