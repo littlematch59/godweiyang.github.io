@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://godweiyang.com/2020/04/06/leetcode-72/</loc>
+    
+    <lastmod>2020-04-06T06:22:32.877Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://godweiyang.com/2020/04/05/leetcode-229/</loc>
     
     <lastmod>2020-04-04T17:56:05.908Z</lastmod>
@@ -730,14 +737,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/11/leetcode-992/</loc>
+    <loc>https://godweiyang.com/2020/03/01/leetcode-btbss/</loc>
     
     <lastmod>2020-03-04T12:02:23.580Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/03/01/leetcode-btbss/</loc>
+    <loc>https://godweiyang.com/2020/01/11/leetcode-992/</loc>
     
     <lastmod>2020-03-04T12:02:23.580Z</lastmod>
     
@@ -751,14 +758,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/20/leetcode-907/</loc>
+    <loc>https://godweiyang.com/2020/01/22/leetcode-881/</loc>
     
     <lastmod>2020-03-04T12:02:23.578Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/22/leetcode-881/</loc>
+    <loc>https://godweiyang.com/2020/01/20/leetcode-907/</loc>
     
     <lastmod>2020-03-04T12:02:23.578Z</lastmod>
     
@@ -849,14 +856,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/17/leetcode-827/</loc>
+    <loc>https://godweiyang.com/2020/01/21/leetcode-829/</loc>
     
     <lastmod>2020-03-04T12:02:23.577Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/21/leetcode-829/</loc>
+    <loc>https://godweiyang.com/2020/01/17/leetcode-827/</loc>
     
     <lastmod>2020-03-04T12:02:23.577Z</lastmod>
     
@@ -884,6 +891,13 @@
   </url>
   
   <url>
+    <loc>https://godweiyang.com/2020/02/04/leetcode-495/</loc>
+    
+    <lastmod>2020-03-04T12:02:23.576Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://godweiyang.com/2020/01/28/leetcode-42/</loc>
     
     <lastmod>2020-03-04T12:02:23.576Z</lastmod>
@@ -892,13 +906,6 @@
   
   <url>
     <loc>https://godweiyang.com/2020/01/18/leetcode-470/</loc>
-    
-    <lastmod>2020-03-04T12:02:23.576Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://godweiyang.com/2020/02/04/leetcode-495/</loc>
     
     <lastmod>2020-03-04T12:02:23.576Z</lastmod>
     
@@ -940,14 +947,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/13/leetcode-124/</loc>
+    <loc>https://godweiyang.com/2020/02/26/leetcode-123/</loc>
     
     <lastmod>2020-03-04T12:02:23.573Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/02/26/leetcode-123/</loc>
+    <loc>https://godweiyang.com/2020/01/13/leetcode-124/</loc>
     
     <lastmod>2020-03-04T12:02:23.573Z</lastmod>
     
@@ -968,14 +975,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/26/leetcode-153/</loc>
+    <loc>https://godweiyang.com/2020/02/09/leetcode-16/</loc>
     
     <lastmod>2020-03-04T12:02:23.573Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/02/09/leetcode-16/</loc>
+    <loc>https://godweiyang.com/2020/01/26/leetcode-153/</loc>
     
     <lastmod>2020-03-04T12:02:23.573Z</lastmod>
     
@@ -1003,14 +1010,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/02/29/leetcode-309/</loc>
+    <loc>https://godweiyang.com/2020/01/30/leetcode-312/</loc>
     
     <lastmod>2020-03-04T12:02:23.573Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/30/leetcode-312/</loc>
+    <loc>https://godweiyang.com/2020/02/29/leetcode-309/</loc>
     
     <lastmod>2020-03-04T12:02:23.573Z</lastmod>
     
@@ -1052,14 +1059,14 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/01/15/leetcode-1031/</loc>
+    <loc>https://godweiyang.com/2020/02/05/leetcode-1039/</loc>
     
     <lastmod>2020-03-04T12:02:23.572Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/02/05/leetcode-1039/</loc>
+    <loc>https://godweiyang.com/2020/01/15/leetcode-1031/</loc>
     
     <lastmod>2020-03-04T12:02:23.572Z</lastmod>
     
@@ -1080,13 +1087,6 @@
   </url>
   
   <url>
-    <loc>https://godweiyang.com/2020/02/24/leetcode-121/</loc>
-    
-    <lastmod>2020-03-04T12:02:23.572Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://godweiyang.com/2020/02/25/leetcode-122/</loc>
     
     <lastmod>2020-03-04T12:02:23.572Z</lastmod>
@@ -1095,6 +1095,13 @@
   
   <url>
     <loc>https://godweiyang.com/2020/03/04/leetcode-1363/</loc>
+    
+    <lastmod>2020-03-04T12:02:23.572Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://godweiyang.com/2020/02/24/leetcode-121/</loc>
     
     <lastmod>2020-03-04T12:02:23.572Z</lastmod>
     
